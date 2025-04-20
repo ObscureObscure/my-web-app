@@ -9,9 +9,16 @@ def hello() -> str:
 
 @app.route('/all') 
 def all() -> 'html':
-    return render_template('index2.html', the_title="privet")#.encode("utf-8")
+    return render_template('index.html', the_title="MAIN PAGE")
+
+@app.route("/code_result")
+def code_result() -> 'html':
+    return render_template("code_result.html", the_code="swag")
+
+
 
 app.run(debug=True)
+
 
 
 

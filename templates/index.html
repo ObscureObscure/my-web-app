@@ -1,29 +1,50 @@
-{% extends 'base.html' %}
+﻿{% extends 'base.html' %}
 {% block body %}
 
 	<h2>{{ the_title }}</h2>
-	<marquee behavior=alternate>~~~don't stay too long, asshole~~~</marquee>
 
-		<h1>website after my stuff</h1>
-	<p>
-		<h2>films?</h2>
-		<h3><i>Amelie or smthng.. </i></h3>
+	<from method='POST' action='/all'>
+		<table>
+			<p>print secret code here(if u izbranni):</p>
+			<tr><td>code </td><td><input name="code" type="TEXT" value="666"></td></tr>
+		</table>
+			<p><input value="TRY" type="SUBMIT"></p>
+	</from>
+	<h1>Страничка посвящается интересной ерунде</h1>
+	<marquee behavior=alternate>~~~don't stay too long, asshole~~~</marquee>
+		<h2>Фильмы ЭЭЭ</h2>
+		<h3><i>Амели </i></h3>
+		<h3><i>Франкенвинни </i></h3>
+		<h3><i>Эдвард Руки-Ножницы </i></h3>
+		<h3><i>Silent Hill (2006) </i></h3>
+		<h3><i>Битлджус </i></h3>
+		<h3><i>Бог большой, я маленькая </i></h3>
+		<h3><i>Долгая помолвка </i></h3>
+		<h3><i>Колдовство </i></h3>
+		<h3><i>Рататуй </i></h3>
+		<h3><i>Реквием по мечте </i></h3>
+		<h3><i>Труп невесты </i></h3>
+		<h3><i>Счастливое стечение обстоятельств </i></h3>
+		<h3><i>Лестница в небо </i></h3>
+		<h3><i>Леонардо Да Винчи </i></h3>
+		<h3><i>Страсти Жанны д'Арк</i></h3>
 		
 	</p>	
 	
 	<p>
-		<h2>Books</h2>
-		<h3><i>Der Steppenwolf hihihi Hermann Hesse</i></h3>
+		<h2>Книги</h2>
+		<h3><i>Роман о Тристане и Изольде Жозеф Бедье</i></h3>
+		<h3><i>Степной Волк Германн Гессе</i></h3>
+		<h3><i>Сиддхартха Германн Гессе</i></h3>
+		<h3><i>Петер Каменцинд Германн Гессе</i></h3>
+		<h3><i>Преступление и Наказание Федор Достоевский</i></h3>
+		<h3><i>На западном фронте без перемен Эрих Мария Ремарк</i></h3>
+		<h3><i>Золотой Храм Юкио Мисима</i></h3>
+		<h3><i>Глас Господа Станислав Лем</i></h3>
+		<h3><i>Парфюмер Патрик Зюскинд</i></h3>
+		<h3><i>Над Кукушкиным Гнездом Кен Кизи</i></h3>
+		<h3><i>Портрет Дориана Грея Оскар Уайлд</i></h3>
+		<h3><i>Собор Парижской Богоматери Виктор Гюго</i></h3>
 	</p>
-
-	<p>
-		<input value='Other!' type='SUBMIT'>
-		button
-	</p>
-	<p>
-		<tr><td>say now or never:</td><td><input name='letters' type='TEXT'  
-		value='sample text'></td></tr> 
-	</p>
-
 
 {% endblock %}
