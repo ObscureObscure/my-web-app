@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__) 
 app.debug = True
@@ -13,7 +13,8 @@ def all() -> 'html':
 
 @app.route("/code_result", methods=["POST"])
 def code_result() -> 'html':
-    return render_template("code_result.html", the_code="swag")
+    input_code = request.form["input_secret_code"]
+    return render_template("code_result.html", the_code=input_code) 
 
 
 
