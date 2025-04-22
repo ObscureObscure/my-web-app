@@ -3,13 +3,15 @@
 
 	<h2>{{ the_title }}</h2>
 
-	<from method='POST' action='/code_result'>
-		<table>
+	<form method='POST' action='/code_result'>
 			<p>print secret code here(if u izbranni):</p>
-			<tr><td>code </td><td><input name="code" type="TEXT" value="666"></td></tr>
-		</table>
-			<p><input value="TRY" type="SUBMIT"></p>
-	
+			<label> CODE </label>
+			<br>
+			<input style="margin-bottom: 10px;" name="code" type="text" value="666">
+			<br>
+			<button type="submit">КНОПКА</button> 
+	</form>
+
 	<h1>Страничка посвящается интересной ерунде</h1>
 	<marquee behavior=alternate>~~~don't stay too long, asshole~~~</marquee>
 		<h2>Фильмы ЭЭЭ</h2>
@@ -47,5 +49,5 @@
 		<h3><i>Собор Парижской Богоматери Виктор Гюго</i></h3>
 	</p>
 
-	</from>
+	
 {% endblock %}
