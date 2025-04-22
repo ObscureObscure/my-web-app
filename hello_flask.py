@@ -11,7 +11,7 @@ def hello() -> str:
 def all() -> 'html':
     return render_template('index.html', the_title="MAIN PAGE")
 
-@app.route("/code_result")
+@app.route("/code_result", methods=["POST"])
 def code_result() -> 'html':
     return render_template("code_result.html", the_code="swag")
 
