@@ -4,10 +4,7 @@ app = Flask(__name__)
 app.debug = True
 
 @app.route('/') 
-def hello() -> str: 
-    return 'Hello world from Flask!' 
-
-@app.route('/all') 
+@app.route('/ж')  
 def all() -> 'html':
     return render_template('index.html', the_title="MAIN PAGE")
 
