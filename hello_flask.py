@@ -1,5 +1,10 @@
 from flask import Flask, render_template, request
 
+def log_request(log_message, req) -> None:
+    with open("logs.txt", "a") as logs:
+        print(f"{log_message}: {req}", file=logs) 
+        
+
 app = Flask(__name__) 
 app.debug = True
 
@@ -11,6 +16,7 @@ def all() -> 'html':
 @app.route("/code_result", methods=["POST"])
 def code_result() -> 'html':
     input_code = request.form["input_secret_code"]
+    log_request("User enter code:", input_code)
     return render_template("code_result.html", the_code=input_code) 
 
 
