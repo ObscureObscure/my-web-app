@@ -8,8 +8,7 @@ def log_request(log_message, req) -> None:
 app = Flask(__name__) 
 app.debug = True
 
-@app.route('/') 
-@app.route('/ж')  
+@app.route('/')  
 def all() -> 'html':
     return render_template('index.html', the_title="MAIN PAGE")
 
@@ -18,6 +17,14 @@ def code_result() -> 'html':
     input_code = request.form["input_secret_code"]
     log_request("User enter code:", input_code)
     return render_template("code_result.html", the_code=input_code) 
+
+
+@app.route("/viewlog")
+def viewlog() -> str:
+    with open("logs.txt") as log:
+        contents = log.read()   
+
+    return contents
 
 
 if __name__ == "__main__":
