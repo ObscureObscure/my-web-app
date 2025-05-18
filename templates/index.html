@@ -1,18 +1,16 @@
 ﻿{% extends 'base.html' %}
 {% block body %}
 
-	<h2>{{ the_title }}</h2>
+	<h1>{{ the_title }}</h1>
 
 	<form method='POST' action='/code_result'>
-			<p>print secret code here(if u izbranni):</p>
+		<button type="submit">МОИ ПИНЫ</button> 
 			<label> CODE </label>
-			<br>
-			<input style="margin-bottom: 10px;" name="input_secret_code" type="date" value="01.01.2007" >
-			<br>
-			<button type="submit">КНОПКА</button> 
+			<br>	<input style="margin-bottom: 10px;" name="input_secret_code" type="date" value="01.01.2007">	<br>
+			
 	</form>
 
-	<h1>Страничка посвящается интересной ерунде</h1>
+	<h2>Страничка посвящается интересной ерунде</h2>
 	<marquee behavior=alternate>~~~don't stay too long, asshole~~~</marquee>
 		<h2>Фильмы ЭЭЭ</h2>
 		<h3><i>Амели </i></h3>
@@ -30,6 +28,7 @@
 		<h3><i>Лестница в небо </i></h3>
 		<h3><i>Леонардо Да Винчи </i></h3>
 		<h3><i>Страсти Жанны д'Арк</i></h3>
+		<h3><i>Мученицы 2008</i></h3>
 		
 	</p>	
 	
