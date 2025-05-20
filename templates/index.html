@@ -3,50 +3,23 @@
 
 	<h1>{{ the_title }}</h1>
 
+
 	<form method='POST' action='/code_result'>
-		<button type="submit">МОИ ПИНЫ</button> 
-			<label> CODE </label>
-			<br>	<input style="margin-bottom: 10px;" name="input_secret_code" type="date" value="01.01.2007">	<br>
+		<p><button type="submit">МОИ ПИНЫ</button></p> 	
+	</form>
+	<form method="POST" action="/films">
+		<p><button type="submit">ФИЛЬМЫ</button></p>
+	</form>
+
+	<form method='POST' action='/code_result'>
+		<p><button type="submit">pass</button></p>
+		<input style="margin-bottom: 10px;" name="input_secret_code" type="date" value="01.01.2007">	
 			
 	</form>
 
 	<h2>Страничка посвящается интересной ерунде</h2>
 	<marquee behavior=alternate>~~~don't stay too long, asshole~~~</marquee>
-		<h2>Фильмы ЭЭЭ</h2>
-		<h3><i>Амели </i></h3>
-		<h3><i>Франкенвинни </i></h3>
-		<h3><i>Эдвард Руки-Ножницы </i></h3>
-		<h3><i>Silent Hill (2006) </i></h3>
-		<h3><i>Битлджус </i></h3>
-		<h3><i>Бог большой, я маленькая </i></h3>
-		<h3><i>Долгая помолвка </i></h3>
-		<h3><i>Колдовство </i></h3>
-		<h3><i>Рататуй </i></h3>
-		<h3><i>Реквием по мечте </i></h3>
-		<h3><i>Труп невесты </i></h3>
-		<h3><i>Счастливое стечение обстоятельств </i></h3>
-		<h3><i>Лестница в небо </i></h3>
-		<h3><i>Леонардо Да Винчи </i></h3>
-		<h3><i>Страсти Жанны д'Арк</i></h3>
-		<h3><i>Мученицы 2008</i></h3>
-		
-	</p>	
-	
-	<p>
-		<h2>Книги</h2>
-		<h3><i>Роман о Тристане и Изольде Жозеф Бедье</i></h3>
-		<h3><i>Степной Волк Германн Гессе</i></h3>
-		<h3><i>Сиддхартха Германн Гессе</i></h3>
-		<h3><i>Петер Каменцинд Германн Гессе</i></h3>
-		<h3><i>Преступление и Наказание Федор Достоевский</i></h3>
-		<h3><i>На западном фронте без перемен Эрих Мария Ремарк</i></h3>
-		<h3><i>Золотой Храм Юкио Мисима</i></h3>
-		<h3><i>Глас Господа Станислав Лем</i></h3>
-		<h3><i>Парфюмер Патрик Зюскинд</i></h3>
-		<h3><i>Над Кукушкиным Гнездом Кен Кизи</i></h3>
-		<h3><i>Портрет Дориана Грея Оскар Уайлд</i></h3>
-		<h3><i>Собор Парижской Богоматери Виктор Гюго</i></h3>
-	</p>
 
-	
+	<h2>Недавно я слушал:</h2>
+	<a href="https://libre.fm/user/Gentle_Horse/scrobble/1747660949"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747660949/image" width="480" height="90" alt="Gentle_Horse listened to You're Standing on My Neck (OST Daria) by Splendora (Splendora)"></a>
 {% endblock %}

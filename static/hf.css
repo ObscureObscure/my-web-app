@@ -1,4 +1,7 @@
 
+.av {
+    text-align: start;
+}
 
 body {
     text-align: center;
@@ -25,4 +28,5 @@ h2 {
 blockquote {
     font-style: italic;
 }
+
 
