@@ -1,12 +1,12 @@
 
-.av {
-    text-align: start;
-}
 
 body {
+    background-image: url(bg-int.jpg);
     text-align: center;
     font-family: Verdana, Geneva, Arial, sans-serif;
     font-size: big;
+    width: 50%;
+    margin: 0 auto;
 }
 
 h1, h2 {
@@ -28,5 +28,18 @@ h2 {
 blockquote {
     font-style: italic;
 }
+.interact {
+    background-color: #485341;
+    background-image: url(static/bg-int.jpg);
+    align-content: end;
+    float: left;
+}
+.lastFM {
+    float: right;
 
-
+}
+footer {
+    background-color: #839576;
+    text-align: center; 
+    padding: 20px;
+}
