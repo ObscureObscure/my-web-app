@@ -1,17 +1,18 @@
 
-
 body {
-    background-image: url(bg-int.jpg);
-    text-align: center;
-    font-family: Verdana, Geneva, Arial, sans-serif;
-    font-size: big;
-    width: 50%;
-    margin: 0 auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color: rgb(49, 77, 49);
+}
+#header {
+    background-color: rgb(75, 99, 64);
+    border: solid rgb(37, 54, 34); 
+    margin-bottom: 5%;
+    padding: 1%;
 }
 
 h1, h2 {
-    color: #35561b;
-    border-bottom: thin dotted #888888;
+
 }
 
 h1 {
@@ -25,21 +26,32 @@ h2 {
     font-size: 150%;
 }
 
-blockquote {
-    font-style: italic;
-}
 .interact {
-    background-color: #485341;
-    background-image: url(static/bg-int.jpg);
-    align-content: end;
+    background-color: rgb(75, 99, 64);
+    border: solid rgb(37, 54, 34); 
+    width: 15%;
     float: left;
+    
+    padding: 1%;
 }
-.lastFM {
+.main {
+    background-color: rgb(75, 99, 64);
+    border: solid rgb(37, 54, 34); 
+    width: 75%;
     float: right;
+    padding: 1%;
+}
+
+
+.lastFM {
 
 }
-footer {
-    background-color: #839576;
-    text-align: center; 
-    padding: 20px;
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(44, 71, 45);
+    color: white;
 }

@@ -4,25 +4,51 @@
     <head>
         <title>{{ the_title }}</title>
         <link rel="stylesheet" href="static/hf.css" />
-        <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
+        <div id="header">
+            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
+            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
+            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
+            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
+            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
+            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
+            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
+            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
+            <h1>{{ the_title }}</h1>
+        </div>
     </head>
     <body>
+        <div class="interact">
+            <marquee behavior=alternate>click click click click click click click click click click click click click click click!</marquee>
+            <form method='POST' action='/pins'>
+                <p><button type="submit">МОИ ПИНЫ</button></p> 	
+            </form>
+            <form method="POST" action="/films">
+                <p><button type="submit">ФИЛЬМЫ</button></p>
+            </form>
+            <form method='POST' action='/books'>
+                <p><button type="submit">КНИГИ</button></p>	
+            </form>
+            <form method='POST' action='/pins'>
+                <p><button type="submit">pass</button></p>
+                <input style="margin-bottom: 10px;" name="input_secret_code" type="date" value="01.01.2007">		
+            </form>
+        </div>
         {% block body %}
 
         {% endblock %}
-
-        <br>
+        <p></p>
         <div class="footer">
-        <footer class="footer">
-            <address>
-                <h2></h2>
-                <p>Author: JewSpirit</p>
-                <p><a href="https://t.me/val00n">tg/jewspirit</a></p>
-            </address>
-        </footer>
+            <footer>
+                <address>
+                    <h2></h2>
+                    <p>JewSpirit</p>
+                    <p class="footer-links"><a href="https://github.com/ObscureObscure">My GitHub</a></p>
+                </address>
+            </footer>
         </div>
-
     </body>
+    
+
 
 
 

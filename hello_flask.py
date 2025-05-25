@@ -11,7 +11,7 @@ app.debug = True
 @app.route('/')  
 @app.route('/home', methods=["POST", "GET"]) 
 def all() -> 'html':
-    return render_template('main-page.html', the_title="ГЛАВНАЯ СТРАНЦА")
+    return render_template('main-page.html', the_title="ГЛАВНАЯ СТРАНИЦА")
 
 
 @app.route("/pins", methods=["POST"])
@@ -23,6 +23,10 @@ def pins() -> 'html':
 @app.route("/films", methods=["POST"])
 def films() -> "html":
     return render_template("films.html", the_title="МОИ ЛЮБИМЫЕ ФИЛЬМЫ")
+
+@app.route("/books", methods=["POST"])
+def books() -> "html":
+    return render_template("books.html", the_title="МОИ ПРОЧТЕННЫЕ КНИГИ")
 
 
 @app.route("/viewlog")

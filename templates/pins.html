@@ -1,15 +1,12 @@
 {% extends 'base.html' %}
 {% block body %}
 
-	<h1>{{ the_title }}</h1>
-
 	<form method="POST" action="/home"> 
 		<button type="submit">НАЗАД</button>
 	</form>
 
 
 	<marquee behavior=alternate>~~~don't stay too long, asshole~~~</marquee>
-		<p>Your code: </p>
 
 	<script src="{{url_for('static', filename='script.js')}}"></script>
 	<h2>Посмотри как круто: </h2>

@@ -1,33 +1,17 @@
 {% extends 'base.html' %}
 {% block body %}
 
-	<h1>{{ the_title }}</h1>
 
-	<h2>Страничка посвящается интересной ерунде</h2>
-	<marquee behavior=alternate>~~~don't stay too long, asshole~~~</marquee>
 
-	<div class="interact" style="width: 15rem;">
-		<marquee behavior=alternate>click click click click click click click click click click click click click click click!</marquee>
-		<form method='POST' action='/pins'>
-			<p><button type="submit">МОИ ПИНЫ</button></p> 	
-		</form>
-		<form method="POST" action="/films">
-			<p><button type="submit">ФИЛЬМЫ</button></p>
-		</form>
+	<div class="main">
+		<marquee behavior=alternate>~~~don't stay too long, asshole~~~</marquee>
+		<h2>Страничка посвящается интересной ерунде</h2>
 
-		<form method='POST' action='/pins'>
-			<p><button type="submit">pass</button></p>
-			<input style="margin-bottom: 10px;" name="input_secret_code" type="date" value="01.01.2007">		
-		</form>
+		<h2>Недавно я слушал:</h2>
+			<a href="https://libre.fm/user/Gentle_Horse/scrobble/1747751856"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747751856/image" width="320" height="60" alt="Gentle_Horse listened to Your Witness by Seppuku Paradigm (Мои треки)"></a>
+			<a href="https://libre.fm/user/Gentle_Horse/scrobble/1747752343"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747752343/image" width="320" height="60" alt="Gentle_Horse listened to Twilight by Bôa (Мои треки)"></a>
+			<a href="https://libre.fm/user/Gentle_Horse/scrobble/1747751511"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747751511/image" width="320" height="60" alt="Gentle_Horse listened to Please Please Please Let Me Get What I Want by Deftones (Мои треки)"></a>
+		</div>
 	</div>
-
-	<div class="lastFM" style="width: 30rem;">
-	<h2>Недавно я слушал:</h2>
-		<a href="https://libre.fm/user/Gentle_Horse/scrobble/1747751856"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747751856/image" width="320" height="60" alt="Gentle_Horse listened to Your Witness by Seppuku Paradigm (Мои треки)"></a>
-		<a href="https://libre.fm/user/Gentle_Horse/scrobble/1747752343"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747752343/image" width="320" height="60" alt="Gentle_Horse listened to Twilight by Bôa (Мои треки)"></a>
-		<a href="https://libre.fm/user/Gentle_Horse/scrobble/1747751511"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747751511/image" width="320" height="60" alt="Gentle_Horse listened to Please Please Please Let Me Get What I Want by Deftones (Мои треки)"></a>
-	</div>
-	
-
 
 {% endblock %}
