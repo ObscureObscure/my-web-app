@@ -3,12 +3,18 @@ body {
     margin-left: 20%;
     margin-right: 20%;
     background-color: rgb(49, 77, 49);
+    background: url(img/BG/3.jpg);
 }
 #header {
+    box-shadow: 8px 8px 15px;
+    background: url(img/BG/2.jpg);
     background-color: rgb(75, 99, 64);
     border: solid rgb(37, 54, 34); 
-    margin-bottom: 5%;
+    margin-bottom: 3%;
     padding: 1%;
+
+    text-align: left;
+
 }
 
 h1, h2 {
@@ -26,7 +32,9 @@ h2 {
     font-size: 150%;
 }
 
-.interact {
+.side-bar {
+    box-shadow: 8px 8px 15px;
+    background: url(img/BG/8.jpg) center;
     background-color: rgb(75, 99, 64);
     border: solid rgb(37, 54, 34); 
     width: 15%;
@@ -34,12 +42,26 @@ h2 {
     
     padding: 1%;
 }
+
+.userpic {
+    box-shadow: 8px 8px 15px;
+    width: 100px;
+    height: 100px;
+    background: url(img/joan.png) center;
+    float: inline-start;
+    margin-right: 30px;
+    
+
+}
 .main {
+    box-shadow: 8px 8px 15px;
+    background: url(img/BG/2.jpg);
     background-color: rgb(75, 99, 64);
     border: solid rgb(37, 54, 34); 
     width: 75%;
     float: right;
     padding: 1%;
+    margin-bottom: 3%;
 }
 
 
@@ -47,11 +69,15 @@ h2 {
 
 }
 .footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    box-shadow: 8px 8px 15px;
+    background: url(img/BG/2.jpg);
+    background-color: rgb(75, 99, 64);
+    border: solid rgb(37, 54, 34); 
     width: 100%;
+    float: left;
     text-align: center;
-    background-color: rgb(44, 71, 45);
-    color: white;
+}
+.footer a {
+    color: rgb(26, 105, 2);
+
 }

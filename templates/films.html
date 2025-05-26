@@ -1,12 +1,9 @@
 ﻿{% extends 'base.html' %}
 {% block body %}
 
-	<form method="POST" action="/home"> 
-		<button type="submit">НАЗАД</button>
-	</form>
-
-
-	<marquee behavior=alternate>~~~don't stay too long, asshole~~~</marquee>
+	<div class="main">
+		<h1>{{ the_title }}</h1>
+		<marquee behavior=alternate>~~~don't stay too long, asshole~~~</marquee>
 		<h2>Фильмы</h2>
 		<h3><i>Амели </i></h3>
 		<h3><i>Франкенвинни </i></h3>
@@ -24,7 +21,6 @@
 		<h3><i>Леонардо Да Винчи </i></h3>
 		<h3><i>Страсти Жанны д'Арк</i></h3>
 		<h3><i>Мученицы 2008</i></h3>
-		
-	</p>	
+	</div>
 	
 {% endblock %}

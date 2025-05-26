@@ -11,22 +11,22 @@ app.debug = True
 @app.route('/')  
 @app.route('/home', methods=["POST", "GET"]) 
 def all() -> 'html':
-    return render_template('main-page.html', the_title="ГЛАВНАЯ СТРАНИЦА")
+    return render_template('main-page.html', the_title="Главная страница")
 
 
 @app.route("/pins", methods=["POST"])
 def pins() -> 'html':
     log_request("User enter code:", 0) 
-    return render_template("pins.html", the_title="МОИ ПИНЫ")
+    return render_template("pins.html", the_title="Мои пины")
 
 
 @app.route("/films", methods=["POST"])
 def films() -> "html":
-    return render_template("films.html", the_title="МОИ ЛЮБИМЫЕ ФИЛЬМЫ")
+    return render_template("films.html", the_title="Мои любимые фильмы")
 
 @app.route("/books", methods=["POST"])
 def books() -> "html":
-    return render_template("books.html", the_title="МОИ ПРОЧТЕННЫЕ КНИГИ")
+    return render_template("books.html", the_title="Книги которые я прочел")
 
 
 @app.route("/viewlog")

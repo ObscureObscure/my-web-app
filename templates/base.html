@@ -4,21 +4,21 @@
     <head>
         <title>{{ the_title }}</title>
         <link rel="stylesheet" href="static/hf.css" />
-        <div id="header">
-            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
-            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
-            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
-            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
-            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
-            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
-            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
-            <img src="{{ url_for('static', filename='img/joan.png') }}" width=100 height=100 class="av"></img>
-            <h1>{{ the_title }}</h1>
-        </div>
+
     </head>
+    <div id="header">
+        <form method='POST' action='/home'>
+            <button type="submit" class="userpic"></button>
+            <h1>Мой вебсайт</h1>
+            <h1>JewSpirit    |   Gentle_Horse   |   Andrey Obscvre</h1>
+        </form>
+    </div>
     <body>
-        <div class="interact">
+        <div class="side-bar">
             <marquee behavior=alternate>click click click click click click click click click click click click click click click!</marquee>
+            <form method='POST' action='/home'>
+                <p><button type="submit">/HOME</button></p> 	
+            </form>
             <form method='POST' action='/pins'>
                 <p><button type="submit">МОИ ПИНЫ</button></p> 	
             </form>
@@ -28,21 +28,17 @@
             <form method='POST' action='/books'>
                 <p><button type="submit">КНИГИ</button></p>	
             </form>
-            <form method='POST' action='/pins'>
-                <p><button type="submit">pass</button></p>
-                <input style="margin-bottom: 10px;" name="input_secret_code" type="date" value="01.01.2007">		
-            </form>
         </div>
         {% block body %}
-
+        
         {% endblock %}
         <p></p>
         <div class="footer">
             <footer>
                 <address>
-                    <h2></h2>
+                    <a href="https://github.com/ObscureObscure">My GitHub</a>
+                    <a href="https://libre.fm/user/Gentle_Horse">My LibreFM</a>
                     <p>JewSpirit</p>
-                    <p class="footer-links"><a href="https://github.com/ObscureObscure">My GitHub</a></p>
                 </address>
             </footer>
         </div>
