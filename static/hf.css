@@ -1,15 +1,15 @@
 
 body {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 17%;
+    margin-right: 17%;
     background-color: rgb(49, 77, 49);
     background: url(img/BG/3.jpg);
 }
 #header {
-    box-shadow: 8px 8px 15px;
+    box-shadow: 8px 8px 15px black;
     background: url(img/BG/2.jpg);
     background-color: rgb(75, 99, 64);
-    border: solid rgb(37, 54, 34); 
+    border: solid rgb(37, 54, 34);
     margin-bottom: 3%;
     padding: 1%;
 
@@ -33,46 +33,88 @@ h2 {
 }
 
 .side-bar {
-    box-shadow: 8px 8px 15px;
+    color: white;
+    box-shadow: 8px 8px 15px black;
     background: url(img/BG/8.jpg) center;
     background-color: rgb(75, 99, 64);
-    border: solid rgb(37, 54, 34); 
-    width: 15%;
+    border: solid rgb(37, 54, 34);
+    width: 25%;
     float: left;
-    
+    margin-bottom: 3%;
     padding: 1%;
+
 }
 
 .userpic {
-    box-shadow: 8px 8px 15px;
+    box-shadow: 8px 8px 15px black;
     width: 100px;
     height: 100px;
     background: url(img/joan.png) center;
     float: inline-start;
     margin-right: 30px;
-    
+
 
 }
-.main {
-    box-shadow: 8px 8px 15px;
-    background: url(img/BG/2.jpg);
+.main-window {
+    box-shadow: 8px 8px 15px black;
+    background: url(img/BG/2-1.jpg);
     background-color: rgb(75, 99, 64);
-    border: solid rgb(37, 54, 34); 
-    width: 75%;
+    border: solid rgb(37, 54, 34);
+    width: 65%;
+    min-height: 500px;
     float: right;
     padding: 1%;
     margin-bottom: 3%;
 }
+.main-window h1 {
+    text-align: center;
+}
+.main-window-footer {
+    width: 100%;
+    float: left;
+    text-align: center;
+}
 
-
-.lastFM {
-
+.libreFM {
+    color: white;
+    box-shadow: 8px 8px 15px black;
+    background: url(img/BG/8.jpg) center;
+    background-color: rgb(75, 99, 64);
+    border: solid rgb(37, 54, 34);
+    width: 25%;
+    min-height: 220px;
+    float: left;
+    margin-bottom: 3%;
+    padding: 1%;
+}
+.libreFM img
+{
+    width: 100%;
+}
+.film-box {
+    box-shadow: 8px 8px 15px black;
+    background-color: rgb(255, 255, 255);
+    border: solid rgb(37, 54, 34);
+    padding: 20px;
+    margin: 3%;
+    float: inline-start;
+    text-align: center;
+    width: 150px;
+    height: 300px;
+}
+.film-box img {
+    width: 150px;
+    height: 226px;
+}
+.BADGE {
+    width: 88px;
+    height: 31px;
 }
 .footer {
-    box-shadow: 8px 8px 15px;
-    background: url(img/BG/2.jpg);
+    box-shadow: 8px 8px 15px black;
+    background: url(img/BG/2-1.jpg);
     background-color: rgb(75, 99, 64);
-    border: solid rgb(37, 54, 34); 
+    border: solid rgb(37, 54, 34);
     width: 100%;
     float: left;
     text-align: center;
