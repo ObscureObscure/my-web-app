@@ -6,27 +6,23 @@
 
 		
 		<marquee behavior=alternate>~~~don't stay too long, asshole~~~</marquee>
+
 		<div><ul>
 			{% for film in links %} 
 				<div class="film-box">
-					
 					<a href={{ film[1] }}><img src={{ film[2] }}></a>
-					<h2>{{ film[3] }}</h2>
-
+					<div class="cassete-title">
+						<h2>{{ film[3] }}</h2>
+					</div>
 				</div>
-			{% endfor %}			
+			{% endfor %}	
 		</ul></div>
+
+
 		<div class="main-window-footer">
 			<p>thanks to </p>
 			<a href="https://en.wikipedia.org/wiki/Main_Page"><img class="BADGE" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/A_Wikimedia_project.svg/132px-A_Wikimedia_project.svg.png"></a>
 		</div>
-	</div>
-	
-	<div class="libreFM">
-		<h2>Недавно я слушал:</h2>
-		<a href="https://libre.fm/user/Gentle_Horse/scrobble/1747751856"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747751856/image" alt="Gentle_Horse listened to Your Witness by Seppuku Paradigm (Мои треки)"></a>
-		<a href="https://libre.fm/user/Gentle_Horse/scrobble/1747752343"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747752343/image" alt="Gentle_Horse listened to Twilight by Bôa (Мои треки)"></a>
-		<a href="https://libre.fm/user/Gentle_Horse/scrobble/1747751511"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747751511/image" alt="Gentle_Horse listened to Please Please Please Let Me Get What I Want by Deftones (Мои треки)"></a>
 	</div>
 
 

@@ -1,6 +1,7 @@
 <!doctype html>
 
 <html lang="ru">
+    
     <head>
         <title>{{ the_title }}</title>
         <link rel="stylesheet" href="static/hf.css" />
@@ -9,40 +10,81 @@
     <div id="header">
         <form method='POST' action='/home'>
             <button type="submit" class="userpic"></button>
-            <h1>Мой вебсайт</h1>
+            <h1>ObscureLand</h1>
             <h2>JewSpirit    |   Gentle_Horse   |   Andrey Obscvre  |   LCR(localChurchRealtor)</h2>
         </form>
     </div>
     <body>
         <div class="side-bar">
-            <marquee behavior=alternate>click click click click click click click click click click click click click click click!</marquee>
-            <form method='POST' action='/home'>
-                <p><button type="submit">/HOME</button></p>
-            </form>
-            <form method='POST' action='/pins'>
-                <p><button type="submit">МОИ ПИНЫ</button></p>
-            </form>
-            <form method="POST" action="/films">
-                <p><button type="submit">ФИЛЬМЫ</button></p>
-            </form>
-            <form method='POST' action='/books'>
-                <p><button type="submit">КНИГИ</button></p>
-            </form>
-        </div>
+            <div class="buttons-bar">
+                <h3><marquee behavior=alternate>click click click click click click click click click click click click click click click!</marquee></h3>
 
+                <form method='POST' action='/home'>
+                    <p><button type="submit">/HOME</button></p>
+                </form>
+                <form method='POST' action='/pins'>
+                    <p><button type="submit">МОИ ПИНЫ</button></p>
+                </form>
+                <form method="POST" action="/films">
+                    <p><button type="submit">ФИЛЬМЫ</button></p>
+                </form>
+                <form method='POST' action='/books'>
+                    <p><button type="submit">КНИГИ</button></p>
+                </form>
+            </div>
+            <div class="libreFM">
+                <h3>Недавно я слушал:</h3>
+                <a href="https://libre.fm/user/Gentle_Horse/scrobble/1747751856"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747751856/image" alt="Gentle_Horse listened to Your Witness by Seppuku Paradigm (Мои треки)"></a>
+                <a href="https://libre.fm/user/Gentle_Horse/scrobble/1747752343"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747752343/image" alt="Gentle_Horse listened to Twilight by Bôa (Мои треки)"></a>
+                <a href="https://libre.fm/user/Gentle_Horse/scrobble/1747751511"><img src="https://libre.fm/user/Gentle_Horse/scrobble/1747751511/image" alt="Gentle_Horse listened to Please Please Please Let Me Get What I Want by Deftones (Мои треки)"></a>
+            </div>
+            <div class="Badges">
+                <h3>thanks to </h3>
+                <img class="BADGE" src="/static/img/Badges/vscode.png">
+                <a href="https://en.wikipedia.org/wiki/Main_Page"><img class="BADGE" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/A_Wikimedia_project.svg/132px-A_Wikimedia_project.svg.png"></a>
+
+                <h3>sites that I like</h3>
+                <a href="https://fairygore.neocities.org/"><img class="BADGE" src="https://images4.imagebam.com/ac/e5/39/ME10GBKU_o.png"></a>
+                <a href="https://rosrets.neocities.org/"> <img class="BADGE" src="https://rosrets.neocities.org/button.png"></a>
+                <a href="https://indylandia.neocities.org/"> <img class="BADGE" src="/static/img/badges/casey.gif"></a>
+                <h3>other</h3>
+                <img class="BADGE" src="/static/img/Badges/no-ai.webp">
+                <img class="BADGE" src="/static/img/Badges/vhs.gif">
+                <img class="BADGE" src="/static/img/Badges/undead.gif">
+            </div>
+        </div>
+        <div class="stamps-bar"><marquee behavior=alternate>
+            <img class="STAMP" src="/static/img/Badges/old-web.png">
+            <img class="STAMP" src="/static/img/Badges/termina.png">
+            <img class="STAMP" src="/static/img/Badges/deftones.gif">
+            <img class="STAMP" src="/static/img/Badges/nature.png">
+            <img class="STAMP" src="/static/img/Badges/meat.gif">
+            <img class="STAMP" src="/static/img/Badges/SH.gif">
+            <img class="STAMP" src="/static/img/Badges/minecraft.png">
+            <img class="STAMP" src="/static/img/Badges/lain.webp">
+            <img class="STAMP" src="/static/img/Badges/rain.webp">
+            <img class="STAMP" src="/static/img/Badges/SH2.jpg">
+            <img class="STAMP" src="/static/img/Badges/monitors.png">
+        </marquee></div>
         {% block body %}
 
         {% endblock %}
+        
         <p></p>
         <div class="footer">
             <footer>
-                <map name="win7widget">
-                    <area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="0,0,446,28" alt="no ai webring" title="no ai webring">
-                    <area href="https://baccyflap.com/noai/?prv&s=sos" target="_top" shape="rect" coords="94,55,191,80" alt="previous" title="previous">
-                    <area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="206,55,303,80" alt="random" title="random">
-                    <area href="https://baccyflap.com/noai/?nxt&s=sos" target="_top" shape="rect" coords="318,55,415,80" alt="next" title="next">
-                </map>
-                <img usemap="#win7widget" src="https://baccyflap.com/noai/win7widget.gif" alt="a Windows 7 style dialog box titled 'The No AI Webring'">
+
+            {% for _ in "123" %}
+
+            <map name="noaimini13b">
+            <area href="https://baccyflap.com/noai" shape="poly" coords="0,2,0,36,40,36,40,60,134,60,134,36,152,36,152,2" target="_blank" alt="no ai webring" title="no ai webring">
+            <area href="https://baccyflap.com/noai/?prv&s=jew" target="_top" shape="rect" coords="4,42,36,58" alt="previous" title="previous">
+            <area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="158,10,170,30" alt="random" title="random">
+            <area href="https://baccyflap.com/noai/?nxt&s=jew" target="_top" shape="rect" coords="138,42,170,58" alt="next" title="next">
+            </map>
+            <img style="width:176px;image-rendering:pixelated" usemap="#noaimini13b" src="https://baccyflap.com/noai/miniwidget13.gif" alt="a black field showing the words THE NO AI WEBRING in gothic lettering, with the word NO in blood red. there are two slender arrows pointing left and right and one gray question mark (also gothic)">
+
+            {% endfor %}
                 <address>
                     <a href="https://github.com/ObscureObscure">My GitHub</a>
                     <a href="https://libre.fm/user/Gentle_Horse">My LibreFM</a>
@@ -52,7 +94,10 @@
             </footer>
         </div>
     </body>
-
+    <div id="me">
+        <img src="/static/img/me.png">
+        <p>this is me^^^</p>
+    </div>
 
 
 
