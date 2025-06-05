@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block body %}
+    <div class="main-window">
+        <h1 class="main-title">{{ the_title }}</h1>
+        {% for img_url in urls %}
+            <img src={{ "/static/img/Badges/" + img_url }} hover={{ "/static/img/Badges/" + img_url }}>
+        {% endfor %}
+
+        <div class="main-window-footer">
+			<p>thanks to...</p>
+            <p>the whole Internet! especially..</p>
+            <a href="https://neocities.org/"><img class="BADGE" src="/static/img/Badges/neocities.png"></a>
+
+		</div>
+    </div>
+
+{% endblock %}

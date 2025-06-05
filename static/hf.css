@@ -3,7 +3,8 @@ body {
     margin-left: 27%;
     margin-right: 7%;
     background-color: rgb(49, 77, 49);
-    background: url(img/BG/3.jpg);
+    background:  linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, .2)), url(img/BG/6.jpg);
+
 }
 #header {
     box-shadow: 8px 8px 15px black;
@@ -18,18 +19,18 @@ body {
     font-family: "Carol Gothic";
 }
 #me {
-    left: 0;
-    position: fixed;
-
+    position: relative;
+    right: 70%;
+    display: block;
 }
 #me img {
-    filter: drop-shadow(15px 15px 15px #000000);
-    width: 550px;
+    filter: drop-shadow(15px 15px 15px #153f04);
+    width: 400px;
     height: auto;
 }
 #me p {
     font-family: "Comic Sans MS";
-    font-size: 350%;
+    font-size: 300%;
     text-align: center;
     -webkit-text-stroke: 3px black;
     color: white;
@@ -75,6 +76,15 @@ h2 {
 .side-bar .buttons-bar {
     text-align: end;
 }
+.side-bar button {
+    font-family: "Comic Sans MS";
+    width: 99%;
+    height: 50px;
+    background: url("img/cassets-side/1.png") no-repeat;
+    font-size: 105%;
+    font-style: bold;
+    background-size: 100% 50px;
+}
 .libreFM img
 {
     width: 100%;
@@ -94,7 +104,8 @@ h2 {
     background-color: rgb(75, 99, 64);
     border: solid rgb(37, 54, 34);
     width: 65%;
-    min-height: 500px;
+    height: 800px;
+    overflow-y: scroll;
     float: right;
     padding: 1%;
     margin-bottom: 3%;
@@ -110,18 +121,19 @@ h2 {
 
 
 .film-box {
+    
     box-shadow: 8px 8px 15px black;
-    background-color: rgb(255, 255, 255);
-    border: solid rgb(37, 54, 34);
-    padding: 10px;
+    background: url(img/BG/10.jpg) no-repeat;
+    background-size: 360px 320px;
     margin-right: 10px;
     margin-bottom: 10px;
     float: inline-start;
-    
+    padding: 10px;
     width: 340px;
     height: 300px;
 }
 .film-box img {
+    box-shadow: 8px 8px 15px black;
     width: 150px;
     height: 226px;
 }
@@ -130,19 +142,25 @@ h2 {
 
 }
 .cassete-title {
-    background: url("img/cassets-side/1.png");
+    display: flex;
+    box-shadow: 8px 8px 15px black;
+    background: url("img/cassets-side/1.png") no-repeat;
+    background-size: 340px 60px;
     width: 340px;
-    height: 46px;
+    height: 60px;
     text-align: center;
     
 }
 .cassete-title h2 {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-left: 100px;
     padding-right: 60px;
     font-family: "Comic Sans MS";
+    font-style: bold;
     font-size: 105%;
-    line-height: 20px;
+
 }
 
 .BADGE {

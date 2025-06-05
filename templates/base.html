@@ -20,16 +20,19 @@
                 <h3><marquee behavior=alternate>click click click click click click click click click click click click click click click!</marquee></h3>
 
                 <form method='POST' action='/home'>
-                    <p><button type="submit">/HOME</button></p>
+                    <button type="submit">/HOME</button>
                 </form>
                 <form method='POST' action='/pins'>
-                    <p><button type="submit">МОИ ПИНЫ</button></p>
+                    <button type="submit">MY PINS</button>
                 </form>
                 <form method="POST" action="/films">
-                    <p><button type="submit">ФИЛЬМЫ</button></p>
+                    <button type="submit">FILMS</button>
                 </form>
                 <form method='POST' action='/books'>
-                    <p><button type="submit">КНИГИ</button></p>
+                    <button type="submit">BOOKS</button>
+                </form>
+                <form method='POST' action='/graphics'>
+                    <button type="submit">GRAPHICS</button>
                 </form>
             </div>
             <div class="libreFM">
@@ -53,6 +56,9 @@
                 <img class="BADGE" src="/static/img/Badges/undead.gif">
             </div>
         </div>
+
+
+
         <div class="stamps-bar"><marquee behavior=alternate>
             <img class="STAMP" src="/static/img/Badges/old-web.png">
             <img class="STAMP" src="/static/img/Badges/termina.png">
@@ -70,6 +76,8 @@
 
         {% endblock %}
         
+
+
         <p></p>
         <div class="footer">
             <footer>
@@ -94,10 +102,7 @@
             </footer>
         </div>
     </body>
-    <div id="me">
-        <img src="/static/img/me.png">
-        <p>this is me^^^</p>
-    </div>
+
 
 
 

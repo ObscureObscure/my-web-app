@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, url_for
 import wiki
+import badges
 
 def log_request(log_message, req) -> None:
     with open("logs.txt", "a") as logs:
@@ -28,6 +29,12 @@ def films() -> "html":
 @app.route("/books", methods=["POST", "GET"])
 def books() -> "html":
     return render_template("books.html", the_title="Книги которые я прочел")
+
+@app.route("/graphics", methods=["POST", "GET"])
+def graphics() -> "html":
+    return render_template("graphics.html", the_title="Graphics", urls=badges.get_badges_url() )
+
+
 @app.route("/viewlog")
 def viewlog() -> str:
     with open("logs.txt") as log:
