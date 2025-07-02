@@ -14,7 +14,26 @@ body {
     margin-bottom: 3%;
     padding: 1%;
     text-align: left;
+    height: 180px;
 }
+.logo {
+    float: left;
+    width: 60%;
+    height: 100%;
+}
+
+
+#auth-form {
+    float: right;
+    width: 20%;
+    max-height: 100%;
+    background: black;
+    padding: 10px;
+}
+.auth-button {
+
+}
+
 #header h1 {
     font-family: "Carol Gothic";
 }
@@ -138,7 +157,7 @@ h2 {
     height: 226px;
 }
 .bingos img {
-    width: 33%;
+    width: 32%;
 
 }
 .cassete-title {

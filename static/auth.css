@@ -1,0 +1,55 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: url(img/BG/5.jpg);
+    background-size: 25%;
+    margin-inline: 35%;
+}
+
+
+#header {
+
+    height: 200px;
+
+    background: url(img/BG/10.png);
+    box-shadow: 8px 8px 15px black;
+    border: solid rgb(37, 54, 34);
+
+    padding: 15px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+.logo button {
+    width: 100px;
+    height: 100px;
+}
+
+.main-window {
+    box-shadow: 8px 8px 15px black;
+    background: url(img/BG/2-1.jpg);
+    border: solid rgb(37, 54, 34);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+
+    min-height: 800px;
+    padding: 15px;
+}
+
+.main-window-footer {
+    width: 100%;
+    float: left;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer {
+    width: 100%;
+}

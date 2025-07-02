@@ -8,11 +8,23 @@
 
     </head>
     <div id="header">
-        <form method='POST' action='/home'>
-            <button type="submit" class="userpic"></button>
-            <h1>ObscureLand</h1>
-            <h2>JewSpirit    |   Gentle_Horse   |   Andrey Obscvre  |   LCR(localChurchRealtor)</h2>
-        </form>
+        <div class="logo">
+            <form method='POST' action='/home'>
+                <button type="submit" class="userpic"></button>
+                <h1>ObscureLand</h1>
+                <h2>JewSpirit    |   Gentle_Horse   |   Andrey Obscvre  |   LCR(localChurchRealtor)</h2>
+            </form>
+        </div>
+        <div id="auth-form">
+            <form method="POST" action="/authorized">
+                <p><h3>Authorization</h3></p>
+                <p>username
+                <input name="username" type="text"></p>
+                <p>password
+                <input name="password" type="text"></p>
+                <button type="submit" class="auth-button">authorize</button>
+            </form>
+        </div>
     </div>
     <body>
         <div class="side-bar">

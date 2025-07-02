@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, url_for
 import wiki
 import badges
+import database
 
 def log_request(log_message, req) -> None:
     with open("logs.txt", "a") as logs:
@@ -14,6 +15,17 @@ app.debug = True
 @app.route('/home', methods=["POST", "GET"]) 
 def all() -> 'html':
     return render_template('main-page.html', the_title="Главная страница")
+
+@app.route('/authorized', methods=["POST"]) 
+def authorized() -> 'str':
+    username = request.form["username"]
+    user_password = request.form["password"]
+    db_output = database.is_user_authorized(username, user_password)
+    if db_output:
+        return f"{username}, Вы авторизованы!!"
+    else:
+        return render_template('auth.html', the_title="Authorization")
+
 
 @app.route("/pins", methods=["POST", "GET"])
 def pins() -> 'html':
@@ -35,7 +47,7 @@ def graphics() -> "html":
     return render_template("graphics.html", the_title="Graphics", urls=badges.get_badges_url() )
 
 
-@app.route("/viewlog")
+@app.route("/viewlog", methods=["POST", "GET"])
 def viewlog() -> str:
     with open("logs.txt") as log:
         contents = log.read()   
