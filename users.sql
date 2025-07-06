@@ -1,1 +1,8 @@
+CREATE TABLE films (
+    id INTEGER PRIMARY KEY,
+    title TEXT NOT NULL UNIQUE,
+    wiki_link TEXT NOT NULL UNIQUE,
+    added_by TEXT NOT NULL UNIQUE
+);
+
 SELECT * FROM users

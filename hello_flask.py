@@ -22,9 +22,9 @@ def authorized() -> 'str':
     user_password = request.form["password"]
     db_output = database.is_user_authorized(username, user_password)
     if db_output:
-        return f"{username}, Вы авторизованы!!"
+        return render_template('auth.html', the_title="Authorization", the_username=username)
     else:
-        return render_template('auth.html', the_title="Authorization")
+        return render_template('auth-failed.html', the_title="Authorization")
 
 
 @app.route("/pins", methods=["POST", "GET"])
