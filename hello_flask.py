@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, url_for
-import wiki
+import wiki_parsing
 import badges
 import database
 
@@ -35,7 +35,7 @@ def pins() -> 'html':
 
 @app.route("/films", methods=["POST", "GET"])
 def films() -> "html":
-    return render_template("films.html", the_title="Мои любимые фильмы", links=wiki.parse_film_info() )
+    return render_template("films.html", the_title="Мои любимые фильмы", links=database.get_films_data() )
 
 
 @app.route("/books", methods=["POST", "GET"])

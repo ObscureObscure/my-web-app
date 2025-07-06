@@ -7,16 +7,20 @@
 		
 		<marquee behavior=alternate>~~~don't stay too long, asshole~~~</marquee>
 
-		<div><ul>
+		<div class="all-films-box">
 			{% for film in links %} 
 				<div class="film-box">
-					<a href={{ film[1] }}><img src={{ film[2] }}></a>
 					<div class="cassete-title">
-						<h2>{{ film[3] }}</h2>
+						<h3>{{ film[3] }}</h3>
+					</div>
+					<a href={{ film[1] }}><img src={{ film[2] }}></a>
+					<div class="film-box-text">
+						<h3>{{ film[5] }}</h3>
+						<h3>Added by {{ film[4] }}</h3>
 					</div>
 				</div>
 			{% endfor %}	
-		</ul></div>
+		</div>
 
 
 		<div class="main-window-footer">

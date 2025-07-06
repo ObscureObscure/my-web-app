@@ -1,5 +1,5 @@
 import sqlite3
-import wiki
+import wiki_parsing
 
 con = sqlite3.connect("users.db")
 cur = con.cursor()
@@ -22,9 +22,16 @@ def add_film(wiki_link):
     con = sqlite3.connect("users.db")
     cur = con.cursor()
 
-    film = wiki.parse_film(wiki_link)
+    film = wiki.parse_film_from_wiki(wiki_link)
     cur.execute(f"INSERT INTO films (title, link, image) VALUES ('{film[0]}', '{film[1]}', '{film[2]}');")
     con.commit()
+
+
+def get_films_data():
+    con = sqlite3.connect("users.db")
+    cur = con.cursor()
+    res = cur.execute("SELECT * FROM films")
+    return [list(i) for i in res.fetchall()]
 
 # films = wiki.parse_film_info()
 
@@ -37,7 +44,7 @@ def add_film(wiki_link):
 
 # add_film(input('введи ссылку на вики статью о фильме'))
 
-res = cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
-print(res.fetchall())
-res = cur.execute("SELECT * FROM users")
-print(res.fetchall())
+# res = cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
+# print(res.fetchall())
+# res = cur.execute("SELECT * FROM users")
+# print(res.fetchall())

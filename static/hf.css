@@ -1,4 +1,7 @@
 
+* h1 h2 h3 {
+    margin: 0%;
+}
 body {
     margin-left: 27%;
     margin-right: 7%;
@@ -126,7 +129,7 @@ h2 {
     height: 800px;
     overflow-y: scroll;
     float: right;
-    padding: 1%;
+    padding: 10px;
     margin-bottom: 3%;
 }
 .main-window h1 {
@@ -139,48 +142,56 @@ h2 {
 }
 
 
-.film-box {
-    
-    box-shadow: 8px 8px 15px black;
-    background: url(img/BG/10.jpg) no-repeat;
-    background-size: 360px 320px;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    float: inline-start;
-    padding: 10px;
-    width: 340px;
-    height: 300px;
-}
-.film-box img {
-    box-shadow: 8px 8px 15px black;
-    width: 150px;
-    height: 226px;
-}
 .bingos img {
     width: 32%;
 
 }
-.cassete-title {
+
+.all-films-box {
+    min-width: 100%;
     display: flex;
-    box-shadow: 8px 8px 15px black;
-    background: url("img/cassets-side/1.png") no-repeat;
-    background-size: 340px 60px;
-    width: 340px;
-    height: 60px;
-    text-align: center;
+    flex-wrap: wrap;
     
 }
-.cassete-title h2 {
+.film-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 100px;
-    padding-right: 60px;
-    font-family: "Comic Sans MS";
-    font-style: bold;
-    font-size: 105%;
-
+    flex-wrap: wrap;
+    width: 350px;
+    min-height: 300px;
+    padding: 10px;
+    margin: 10px;
+    background: url(img/BG/10.jpg);
+    background-size: 150%;
 }
+.film-box-text {
+    margin: 5px;
+    width: 50%;
+}
+.film-box img {
+    margin: 5px;
+    width: 150px;
+    height: 226px;
+}
+.cassete-title {
+    padding: 0px;
+    margin: 5px;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    background: url(img/cassets-side/1.png) ;
+    background-size: 100% 100%;
+
+    display: flex;
+    
+}
+.cassete-title h3 {
+    margin-left: 27%;
+    margin-top: 4px;
+    padding: 0px;
+    margin-right: 15%;
+}
+
+
 
 .BADGE {
     width: 88px;
